@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: creditapproveservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://localhost:8888
