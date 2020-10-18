@@ -23,6 +23,7 @@
         <module>config-server</module>
         <module>credit-approval-service</module>
         <module>identity-service</module>
+        <module>eureka-service</module>
     </modules>
 
     <build>

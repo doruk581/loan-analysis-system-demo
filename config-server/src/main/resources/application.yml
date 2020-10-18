@@ -3,6 +3,8 @@ server:
 spring:
   cloud:
     config:
+      discovery:
+        enabled: true
       server:
         encrypt.enabled: true
         git:
