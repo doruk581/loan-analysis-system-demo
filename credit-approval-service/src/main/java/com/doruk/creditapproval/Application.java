@@ -11,7 +11,6 @@ import com.doruk.creditapproval.interfaces.request.CreditApproveRequest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -37,4 +36,13 @@ public class Application {
     CreditApplicationFactory creditApplicationFactory(){
         return new DefaultCreditApplicationFactory();
     }
+
+   /*@Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }*/
 }

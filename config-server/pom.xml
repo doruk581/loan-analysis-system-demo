@@ -17,7 +17,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.4.RELEASE</version>
+        <version>2.2.5.RELEASE</version>
         <relativePath></relativePath>
     </parent>
 
@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR5</version>
+                <version>Hoxton.SR3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -46,12 +46,14 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.2.2.RELEASE</version>
         </dependency>
     </dependencies>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <start-class>com.doruk.configserver.Application</start-class>
         <java.version>11</java.version>
         <docker.image.name>doruk581/cas-confsvr</docker.image.name>

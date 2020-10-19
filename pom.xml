@@ -15,8 +15,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.8.RELEASE</version>
-        <relativePath></relativePath>
+        <version>2.2.5.RELEASE</version>
     </parent>
 
     <modules>
@@ -24,6 +23,7 @@
         <module>credit-approval-service</module>
         <module>identity-service</module>
         <module>eureka-service</module>
+        <module>blacklist-service</module>
     </modules>
 
     <build>
