@@ -1,2 +1,4 @@
-package com.doruk.creditapproval.domain;public interface IdentityService {
+package com.doruk.creditapproval.domain;
+
+public interface IdentityService {
 }

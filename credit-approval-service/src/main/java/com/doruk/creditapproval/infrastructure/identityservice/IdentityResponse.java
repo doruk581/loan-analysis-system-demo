@@ -1,2 +1,4 @@
-package com.doruk.creditapproval.infrastructure.identityservice;public class IdentityResponse {
+package com.doruk.creditapproval.infrastructure.identityservice;
+
+public class IdentityResponse {
 }

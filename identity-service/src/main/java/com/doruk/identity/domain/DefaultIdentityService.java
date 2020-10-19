@@ -23,7 +23,7 @@ public class DefaultIdentityService implements IdentityService {
     @Override
     public IdentityResponse getIdentityInformation(final String identityNo) {
 
-        Optional<IdentityInformation> identityInformation = Optional.ofNullable(identityRepository.findOne(identityNo));
+        Optional<IdentityInformation> identityInformation = identityRepository.findById(identityNo);
 
         if (identityInformation.isEmpty()){
             final ExternalIdentityResponse externalIdentityResponse =

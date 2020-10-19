@@ -1,4 +1,4 @@
-package com.doruk.creditapproval.interfaces;
+package com.doruk.blacklist.interfaces;
 
 public class ApiError {
     private Error error;

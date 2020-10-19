@@ -1,2 +1,4 @@
-package com.doruk.blacklist.application;public interface BlacklistService {
+package com.doruk.blacklist.application;
+
+public interface BlacklistService {
 }

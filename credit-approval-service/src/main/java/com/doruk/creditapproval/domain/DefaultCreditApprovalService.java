@@ -18,13 +18,14 @@ public class DefaultCreditApprovalService implements CreditApprovalService {
 
     @Override
     public CreditApplication getCreditApplication(Integer id) {
-        return Optional.ofNullable(creditRepository.findOne(id)).orElseThrow(() -> CreditApplicationNotFoundException.create(id));
+       return creditRepository.findById(id).orElseThrow(() -> CreditApplicationNotFoundException.create(id));
     }
 
     @Override
     public CreditApprovalResponse checkApproval(CreditApproveRequest request) {
         //TODO: BLACKLIST SERVICE VS...
         final CreditApplication creditApplication = factory.createFrom(request);
+
 
         creditRepository.save(creditApplication);
 

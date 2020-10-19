@@ -1,2 +1,4 @@
-package com.doruk.blacklist.domain;public class DefaultBlacklistService {
+package com.doruk.blacklist.domain;
+
+public class DefaultBlacklistService {
 }
