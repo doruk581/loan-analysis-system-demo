@@ -10,19 +10,19 @@ public class CreditApproveRequestValidationService implements ValidationService<
 
     @Override
     public ValidationResult validate(CreditApproveRequest request) {
-        if (request.getBornYear() < 1900 ||request.getBornYear() >= LocalDate.now().getYear())
+        if (request.getBornYear() < 1900 || request.getBornYear() >= LocalDate.now().getYear())
             return ValidationResult.error("Born year is invalid!", ErrorCode.BORNYEARINVALID);
 
-        if (request.getIdentityNumber() == null ||request.getIdentityNumber().isBlank())
+        if (request.getIdentityNumber() == null || request.getIdentityNumber().isBlank())
             return ValidationResult.error("Identity number is invalid!", ErrorCode.IDENTITYNUMBERINVALID);
 
-        if (request.getName() == null ||request.getName().isBlank())
+        if (request.getName() == null || request.getName().isBlank())
             return ValidationResult.error("Name is invalid!", ErrorCode.NAMEINVALID);
 
         if (request.getMonthlyIncome().compareTo(BigDecimal.ZERO) < 1)
             return ValidationResult.error("Monthly income invalid!", ErrorCode.MONTHLYINCOMEINVALID);
 
-        if (request.getSurname() == null ||request.getSurname().isBlank())
+        if (request.getSurname() == null || request.getSurname().isBlank())
             return ValidationResult.error("Surname is invalid!", ErrorCode.SURNAMEINVALID);
 
         if (request.getPhoneNumber() == null || request.getPhoneNumber().isBlank())

@@ -23,12 +23,12 @@ public class CreditApprovalController {
     }
 
     @GetMapping(path = "/v1/{id}")
-    public ResponseEntity<Object> getApplicationById(@PathVariable Integer id){
+    public ResponseEntity<Object> getApplicationById(@PathVariable Integer id) {
         return ResponseEntity.ok(creditApprovalService.getCreditApplication(id));
     }
 
     @PostMapping(path = "/v1/credit/approve")
-    public ResponseEntity<Object> creditApproval(@RequestBody CreditApproveRequest creditApproveRequest){
+    public ResponseEntity<Object> creditApproval(@RequestBody CreditApproveRequest creditApproveRequest) {
 
         final ValidationResult validationResult = creditApproveRequestValidationService.validate(creditApproveRequest);
         if (!validationResult.getIsValid()) {

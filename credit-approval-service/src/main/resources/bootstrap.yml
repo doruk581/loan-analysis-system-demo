@@ -7,3 +7,5 @@ spring:
   cloud:
     config:
       enabled: true
+server:
+  port: 4567

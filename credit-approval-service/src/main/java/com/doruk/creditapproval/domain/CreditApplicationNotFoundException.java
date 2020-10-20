@@ -1,6 +1,6 @@
 package com.doruk.creditapproval.domain;
 
-public class CreditApplicationNotFoundException extends RuntimeException{
+public class CreditApplicationNotFoundException extends RuntimeException {
 
     private Integer id;
 

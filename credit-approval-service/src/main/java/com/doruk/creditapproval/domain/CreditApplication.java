@@ -22,4 +22,7 @@ public class CreditApplication {
     @Enumerated(EnumType.STRING)
     @Column(name = "STATUS")
     private ApplicationStatus applicationStatus;
+
+    @Embedded
+    private Applicant applicant;
 }

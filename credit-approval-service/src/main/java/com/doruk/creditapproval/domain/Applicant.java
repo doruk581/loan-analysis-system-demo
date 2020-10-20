@@ -2,7 +2,8 @@ package com.doruk.creditapproval.domain;
 
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
 @Embeddable
 @Getter
@@ -11,12 +12,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Applicant {
-    @Column(name = "APPLICANT_NAME",nullable = false)
+    @Column(name = "APPLICANT_NAME", nullable = false)
     private String applicantName;
 
-    @Column(name = "APPLICANT_SURNAME",nullable = false)
+    @Column(name = "APPLICANT_SURNAME", nullable = false)
     private String applicantSurname;
 
-    @Column(name = "APPLICANT_IDENTITY",nullable = false)
+    @Column(name = "APPLICANT_IDENTITY", nullable = false)
     private String applicantIdentityNumber;
 }
