@@ -9,4 +9,4 @@ spring:
         encrypt.enabled: true
         git:
           uri: https://github.com/doruk581/config-repository/
-          searchPaths: creditapproveservice,identityservice
+          searchPaths: creditapproveservice,identityservice,blacklistservice
